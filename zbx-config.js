@@ -48,5 +48,9 @@ Optional Variables:
 {
   port: 8125,
   backends: ["./backends/zabbix"],
-  flushInterval: 6000
+  flushInterval: 6000,
+  zabbix: {
+    sender: "/home/jcohen/Projects/statsd/zabbix_sender.sh",
+    config: "/foo/config"
+  }
 }
